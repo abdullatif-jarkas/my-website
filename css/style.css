@@ -1,0 +1,217 @@
+:root{
+    --main-color: #343a40;
+    --logo-color: #14213d;
+    --secondary-color: #fca311;
+    --body-color: #fcfeff;
+    --secondary-body-color: #eff7fa;
+    --btn-landing: #14213d;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: var(--body-color);
+}
+/* start navbar */
+.navbar{
+    box-shadow: 0px -4px 15px 0px var(--logo-color);
+    background-color: #fff;
+}
+.logo {
+    font-family: Lobster;
+    color: var(--logo-color);
+    transition: .2s;
+}
+.logo:hover{
+    color: var(--secondary-color);
+    transform: scale(1.1);
+}
+.navbar .navbar-nav .nav-link {
+    color: var(--main-color);
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:active
+{
+    color: var(--secondary-color);
+}
+.navbar .search{
+    border-left: 1px solid var(--logo-color);
+}
+.navbar .search i{
+    color: var(--logo-color);
+}
+.navbar .navbar-toggler{
+    color: var(--logo-color);
+    border-color: var(--logo-color); 
+    border-radius: 10px;
+    transition: .5s;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded = "true"]{
+    border-radius: 45%;
+    box-shadow: none;
+}
+.btn-login{
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    font-weight: bold;
+    color: #fff;
+    transition: .5s;
+}
+.btn-login:hover, 
+.btn-login:focus
+{
+    color: #fff;
+    transform: scale(1.1);
+}
+/* end navbar */
+/* Start landing */
+.landing{
+    background-color: var(--secondary-color);
+    min-height: calc(100vh - 72px);
+    user-select: none;
+    box-shadow: 0px -4px 15px 0px var(--logo-color);
+}
+.landing span{
+    font-size: 50px;
+    font-family: Lobster;
+    color: var(--btn-landing);
+}
+.landing .btn-landing,
+.landing .btn-landing-cv
+{
+    font-weight: bold;
+    transition: .5s;
+}
+.landing .btn-landing{
+    background-color: var(--btn-landing);
+    color: #fff;
+}
+.landing .btn-landing-cv{
+    background-color: #fff;
+    color: var(--btn-landing);
+    margin-right: 10px;
+}
+.landing .btn-landing:hover,
+.landing .btn-landing-cv:hover
+{
+    transform: scale(1.1);
+}
+/* End landing */
+/* start features */
+/* .card {
+    color: white;
+    box-shadow: 0px 0px 15px 0px #ddd;
+    background-color: #ffac24;
+    border: 0;
+    border-radius: 40px;
+} */
+.features{
+    margin-top: 50px;
+}
+.feat{
+    background-color: #fca311;
+    box-shadow:  0px 0px 15px 0px #ddd;
+    border: 0;
+    border-radius: 40px;
+    color: #fff;
+}
+.skills{
+    font-family: Anton;
+    font-size: 12rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -150px;
+    color: #ebebeb;
+    z-index: -1;
+    letter-spacing: 40px;
+}
+@media (max-width: 768px) {
+    .skills{
+        letter-spacing: 1px;
+        font-size: 8rem;
+        top: -120px;
+    }
+}
+.features i{
+    color: var(--btn-landing);
+}
+.features h4{
+    font-family: Anton;
+    background-color: white;
+    color: var(--logo-color);
+    border-radius: 3px;
+    margin: 0 5px;
+    padding: 10px 0;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+/* end features */
+/* start services */
+.services{
+    background-color: var(--secondary-body-color);
+}
+.freelancer{
+    width: fit-content;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.freelancer i{
+    color: var(--secondary-color);
+}
+.gallery{
+    text-align: center;
+    width: fit-content;
+}
+/* end services */
+/* start footer */
+.footer{
+    background-color: var(--btn-landing);
+}
+.footer-logo{
+    font-family: Lobster;
+    color: var(--body-color);
+    user-select: none;
+    width: fit-content;
+    transition: .2s;
+}
+.footer-logo:hover{
+    color: var(--secondary-color);
+}
+.footer .copyright > span{
+    color: #33d1cc;
+}
+.footer .copyright div span{
+    color: var(--secondary-color);
+}
+.footer .contact ul svg{
+    width: 20px;
+    height: 20px;
+}
+.mail{
+    background-color: var(--secondary-color);
+    color: var(--body-color);
+    font-weight: bold;
+    letter-spacing: 4px;
+    transition: .5s;
+}
+.mail:hover{
+    transform: scale(1.05);
+}
+.footer .facebook{
+    background-color: #1877f2;
+}
+.footer .linkedin{
+    background-color: #00a0dc;
+}
+.footer .instagram{
+    background-color: #c13584;
+}
+.footer .telegram{
+    background-color: #0088cc;
+}
+.social-icons{
+    width: fit-content;
+}
+/* end footer */
